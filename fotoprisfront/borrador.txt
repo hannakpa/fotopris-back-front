@@ -1,0 +1,22 @@
+  function sumaFotoFormato() {
+    let suma = 0;
+    console.log(precioEnvio, precioFormato, precioFoto);
+    suma = precioFoto + precioFormato;
+    if (suma >= 100 && (destino == "eu" || destino == "espania")) {
+      setTotal(suma.toFixed(2) * 1);
+    } else {
+      setTotal((suma + precioEnvio).toFixed(2) * 1);
+    }
+  }
+
+  useEffect(() => {
+    sumaFotoFormato();
+  }, [precioEnvio, precioFormato]);
+
+
+  
+
+                        <tr>
+                        <td>Gastos de envío</td>
+                        <td>{precioEnvio} €</td>
+                      </tr>

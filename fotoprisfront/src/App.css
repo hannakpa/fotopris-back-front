@@ -1,0 +1,50 @@
+.big-box {
+  text-align: center;
+  box-shadow: 0 2px 20px 3px #1e4e1f8b;
+  border:solid 1px rgb(175, 180, 176);
+  padding: 2rem;
+  margin: 2rem 1rem;
+}
+
+.centrar {
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.centrar > button {
+  margin: 3rem;
+  font-weight: bold;
+}
+.card {
+  color: black;
+  margin: 0.2rem;
+  padding:1rem;
+}
+
+.row {
+  margin-top: 1rem;
+}
+
+.row > button {
+  width: auto;
+  margin: auto 0.3rem;
+}
+
+.icono-carrito{
+  display:flex;
+  justify-content: right;
+  font-size: 2rem;
+  margin-right:2rem;
+}
+
+a{
+  color:white!important;
+  text-decoration: none!important;
+}
+.navbar{
+display: flex!important;;
+justify-content: space-between !important;
+ font-size: 2rem;
+}
+

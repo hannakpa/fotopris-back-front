@@ -1,0 +1,20 @@
+
+app.get("/", function (req, res) {
+  res.send("Hola API Fotopris");
+});
+const modelos = require("./models/index");
+
+//tambi'en puedo pasarlo a otros controladores usando el app.use(ruta, nombre) e indicando todas las funciones dentro de su controller.
+app.get("/articulos", function (req, res) {
+  modelos.Articulo.findAll()
+    .then((datos) => res.json(datos))
+    .catch((error) => res.json(error));
+});
+
+//app.get()
+
+app.get("/formatos", function (req, res) {
+  modelos.Formato.findAll()
+    .then((datos) => res.json(datos))
+    .catch((error) => res.json(error));
+});
